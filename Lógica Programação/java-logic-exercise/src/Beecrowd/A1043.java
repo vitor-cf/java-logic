@@ -10,10 +10,20 @@ public class A1043 {
         System.out.println("Informe A, B e C: ");
         A = input.nextFloat();
         B = input.nextFloat();
-        C = input.nextFloat();
+        C = input.nextFloat(); 
 
-        if ((B - C) < A && (B + C) > A) {
-            if ()
+        float BC;
+        BC = B + C;
+        
+
+        if (BC > A ) {
+            float perimetro = A + B + C;
+            System.out.println("Perimetro = " + perimetro);
+        } else {
+            float areaTrapezio = ((A + B) * C ) / 2;
+            System.out.println("Area = " + areaTrapezio);
         }
-    }
+    } 
 }
+        
+            
