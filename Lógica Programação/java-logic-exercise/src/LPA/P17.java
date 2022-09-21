@@ -15,15 +15,18 @@ public class P17 {
 
         switch (alternativa) {
             case "a":  case "b":
-            text = "Pontuação: 1 ";
+            int pontuacao = 1;
+            text = "Resposta correta " + "\nPontuação: " + pontuacao;
             break;
             case "c": case "d":
-            text = "Pontuação: 0" ;
+            pontuacao = 0;
+            text = "Resposta errada " + "\nPontuação: " + pontuacao ;
             break;
             default:
             text = "alternativa nao existe";
             break;
         }
+
         System.out.println(text);
     }
 }
