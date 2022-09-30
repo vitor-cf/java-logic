@@ -1,0 +1,21 @@
+package quebec.dio;
+
+import java.util.*;
+
+public class PrimeiroPrograma {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int valor1 = 1, valor2 = 0, contador = 0;	
+		
+		while (contador <= 5) {
+			valor1++;
+			contador++;
+			System.out.println(valor1);
+		}
+		
+	}
+
+}
+

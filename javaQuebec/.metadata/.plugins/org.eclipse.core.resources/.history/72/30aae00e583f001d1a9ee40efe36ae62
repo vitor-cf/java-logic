@@ -1,0 +1,16 @@
+package quebec.dio;
+
+import java.util.*;
+
+public class PrimeiroPrograma {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int valor = sc.nextInt();
+		System.out.println(valor + valor);
+		
+	}
+
+}
+
