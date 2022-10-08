@@ -27,7 +27,7 @@ public class P28 {
             seqAritmetica = valorI + RAZAO;
             valorI = seqAritmetica;
             somaElementos += valorI;
-            System.out.println(valorI);
+            System.out.println("["+valorI +"" +"]");
             if(valorI % 2 == 0) {
                 pares++;
             } else if (valorI % 2 != 0) {
@@ -59,7 +59,7 @@ public class P28 {
         
         
         
-        System.out.println("Quantidade de elementos da sequencia:");
+        System.out.println("\nQuantidade de elementos da sequencia:");
         System.out.println(qtdElementos); 
 
         System.out.println("Media aritmetica:");
