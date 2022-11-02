@@ -1,7 +1,7 @@
 package Beecrowd;
 import java.util.Scanner;
 
-public class A1093 {
+public class A1094 {
     public static void main(String[] args) {
         
         Scanner sc = new Scanner(System.in);

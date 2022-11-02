@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.List; 
@@ -6,7 +5,9 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Iterator;
 
-public class ExemploList {
+
+
+public class MetodosList {
 
     public static void main(String[] args) {
         //  Dada uma lista com 7 notas de um aluno [7, 8.5, 9.3, 5, 7, 0, 3.6], faça:
@@ -75,6 +76,18 @@ public class ExemploList {
         System.out.println("Remova nota na posiçao 0");
         notas.remove(0);
         System.out.println(notas);
+        System.out.println("Remova as notas menores que 7 e exiba a lista:");
+        Iterator<Double> iterator1 = notas.iterator();
+        while(iterator1.hasNext()) {
+            Double next = iterator1.next();
+            if(next < 7) iterator1.remove();
+        } 
+        System.out.println(notas);
+        System.out.println("Apague toda a lista:");
+        notas.clear();
+        System.out.println(notas);
+        System.out.println("Confira se a lista está vazia: " + notas.isEmpty());
+         
      }
     
 
