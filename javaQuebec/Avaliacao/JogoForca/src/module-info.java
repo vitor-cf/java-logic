@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author spect
+ *
+ */
+module JogoForca {
+}

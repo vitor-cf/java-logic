@@ -32,6 +32,9 @@ public class OrdenandoList {
         Collections.sort(meusGatos);
         System.out.println(meusGatos);
 
+        System.out.println("---\tOrdem Idade\t---");
+        Collections.sort(meusGatos,new ComparatorIdade());
+        meusGatos.sort(new ComparatorIdade());
 
     } 
 
@@ -70,5 +73,12 @@ class Gato implements Comparable<Gato>{
 
     public int compareTo(Gato gato) {
         return this.getNome().compareToIgnoreCase(gato.getNome());
+    }
+}
+
+
+class ComparatorIdade implements Comparator<Gato> {
+    public int compare(Gato g1, Gato g2) {
+        return Integer.compare(g1.getIdade(), g2.getIdade());
     }
 }
